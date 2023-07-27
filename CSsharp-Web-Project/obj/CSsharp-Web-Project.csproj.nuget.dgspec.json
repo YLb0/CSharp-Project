@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Beli\\source\\repos\\CSsharp-Web-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj": {}
+    "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Beli\\source\\repos\\CSsharp-Web-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj": {
+    "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Beli\\source\\repos\\CSsharp-Web-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
+        "projectUniqueName": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
         "projectName": "CSsharp-Web-Project",
-        "projectPath": "C:\\Users\\Beli\\source\\repos\\CSsharp-Web-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
+        "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
         "packagesPath": "C:\\Users\\Beli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Beli\\source\\repos\\CSsharp-Web-Project\\CSsharp-Web-Project\\obj\\",
+        "outputPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Beli\\AppData\\Roaming\\NuGet\\NuGet.Config",
