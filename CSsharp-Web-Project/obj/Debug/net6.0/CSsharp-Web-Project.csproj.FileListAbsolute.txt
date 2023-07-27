@@ -75,3 +75,6 @@ C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\obj\Debug\net6.
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\obj\Debug\net6.0\CSsharp-Web-Project.pdb
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\obj\Debug\net6.0\CSsharp-Web-Project.genruntimeconfig.cache
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\obj\Debug\net6.0\ref\CSsharp-Web-Project.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystem.Data.Models.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystem.Data.Models.pdb
