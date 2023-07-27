@@ -1,0 +1,12 @@
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\bin\Debug\net6.0\ShopSystem.Data.Models.deps.json
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\bin\Debug\net6.0\ShopSystem.Data.Models.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\bin\Debug\net6.0\ShopSystem.Data.Models.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.csproj.AssemblyReference.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.AssemblyInfo.cs
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\refint\ShopSystem.Data.Models.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ShopSystem.Data.Models.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\ShopSystem.Data.Models\obj\Debug\net6.0\ref\ShopSystem.Data.Models.dll
