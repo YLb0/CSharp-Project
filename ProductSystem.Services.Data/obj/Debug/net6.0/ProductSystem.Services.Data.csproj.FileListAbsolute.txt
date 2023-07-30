@@ -1,0 +1,12 @@
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\bin\Debug\net6.0\ProductSystem.Services.Data.deps.json
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\bin\Debug\net6.0\ProductSystem.Services.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\bin\Debug\net6.0\ProductSystem.Services.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.csproj.AssemblyReference.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.AssemblyInfoInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.AssemblyInfo.cs
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\refint\ProductSystem.Services.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ProductSystem.Services.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\ProductSystem.Services.Data\obj\Debug\net6.0\ref\ProductSystem.Services.Data.dll
