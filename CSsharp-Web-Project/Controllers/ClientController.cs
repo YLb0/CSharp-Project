@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProductSystem.Services.Data;
 using ProductSystem.Services.Data.Interfaces;
 using ShopSystems.Web.ViewModels.Client;
 
@@ -11,6 +12,13 @@ namespace CSsharp_Web_Project.Controllers
         public ClientController(IClientService clientService)
         {
             this.clientService = clientService;
+        }
+
+        public async Task<IActionResult> All()
+        {
+            var model = await clientService.GetMyOrdersAsync();
+
+            return View(model);
         }
 
         [HttpGet]

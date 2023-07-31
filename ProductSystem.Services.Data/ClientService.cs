@@ -4,6 +4,7 @@ using Shop.System.Data;
 using ShopSystem.Data.Models;
 using ShopSystems.Web.ViewModels.Cart;
 using ShopSystems.Web.ViewModels.Client;
+using ShopSystems.Web.ViewModels.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -90,19 +91,18 @@ namespace ProductSystem.Services.Data
 
         public async Task<IEnumerable<AllOrdersViewModel>> GetMyOrdersAsync()
         {
-            return await dbContext.BillsClients
-                .Select(o => new AllOrdersViewModel
-                {
-                    FirstName = o.Client.FirstName,
-                    LastName = o.Client.LastName,
-                    Address = o.Client.Address,
-                    City = o.Client.City,
-                    Country = o.Client.Country,
-                    OrderDate = o.Client.OrderDate,
-                    PhoneNumber = o.Client.PhoneNumber,
-                    ProductName = o.Bill.Cart.Product.Name,
-                    ProductCategory = o.Bill.Cart.Product.Category.Name
-                }).ToListAsync();
+            return await dbContext.Clients
+                .Select(p => new AllOrdersViewModel
+                    {
+                    Id = p.Id.ToString(),
+                    FirstName=p.FirstName,
+                    LastName=p.LastName,
+                    Address = p.Address,
+                    City = p.City,
+                    Country = p.Country,
+                    OrderDate = p.OrderDate,
+                    PhoneNumber = p.PhoneNumber
+                    }).ToArrayAsync();
         }
     }
 }
