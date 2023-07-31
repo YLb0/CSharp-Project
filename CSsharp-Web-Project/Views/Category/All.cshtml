@@ -1,0 +1,37 @@
+﻿@model IEnumerable<AllCategoryViewModel>
+
+@{
+    ViewBag.Title = "All Categories";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<p>
+    <a asp-action="Add" class="btn btn-success mb-2">Add New Category</a>
+</p>
+
+<div class="text-center row">
+
+@*    <h3 class="card-title mt-1">All - Categories</h3>*@
+    @foreach (var category in Model)
+    {
+               <div class="card col-4" style="width: 20rem;">
+                <p class="mb-0">Id: @category.Id</p>
+                <h5 class="card-title mt-1">Category - Name: @category.Name</h5>
+                <p>
+                    <span style="float:none">
+                        <a asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id" class="btn btn-primary">Edit</a>
+                    </span>
+                </p>
+                <form class="mt-2" asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id">
+                    <div class="d-grid gap-2">
+                        <span style="float:left">
+                            <input type="submit" value="Delete" class="btn btn-danger mb-2"
+                                   onclick="return confirm('Are you sure you want to delete post: @category.Name')" />
+                        </span>
+                    </div>
+                </form>
+       </div>
+    }
+</div>

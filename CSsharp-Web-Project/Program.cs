@@ -1,6 +1,7 @@
-using CSsharp_Web_Project.Data;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ProductSystem.Services.Data.Interfaces;
+using ProductSystem.Services.Data;
+using Shop.System.Data;
 using ShopSystem.Data.Models;
 
 namespace CSsharp_Web_Project
@@ -13,7 +14,7 @@ namespace CSsharp_Web_Project
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            builder.Services.AddDbContext<Sh0pDBContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -30,8 +31,15 @@ namespace CSsharp_Web_Project
                 options.Password.RequiredLength =
                                 builder.Configuration.GetValue<int>("Identity:Password:RequiredLength");
             })
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<Sh0pDBContext>();
             builder.Services.AddControllersWithViews();
+
+
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IBillService, BillService>();
+            builder.Services.AddScoped<IClientService, ClientService>();
 
             var app = builder.Build();
 

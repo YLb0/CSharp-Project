@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AllProductsViewModel>
+
+@{
+    ViewBag.Title = "All Products";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+
+<p>
+    <a asp-action="Add" class="btn btn-success mb-2">Add New Product</a>
+</p>
+
+    @foreach (var product in Model)
+    {
+         <div class="card col-4" style="width: 20rem;">
+            <img class="card-img-top" style="width: 18rem;"
+                 src="@product.ImageUrl" alt="Movie Image">
+            <div class="card-body">
+
+                <h5 class="card-title mt-1">@product.Name</h5>
+                <p class="mb-0">Price: @product.Price  €</p>
+                <p class="mb-0">Description: @product.Description</p>
+                <p>Category: @product.Category</p>
+
+                            <a href="/Product/Edit/@product.Id" class="btn btn-warning">Edit</a>
+                <form class="mt-2" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id">
+                    <div class="d-grid gap-2">
+                        <span style="float:left">
+                            <input type="submit" value="Delete" class="btn btn-danger mb-2"
+                                   onclick="return confirm('Are you sure you want to delete post: @product.Name')" />
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+      </div>
+    }
+                <form class="input-group-sm" asp-controller="Client" asp-action="AddOrder">
+                <input type="submit" value="Add to Collection" class="fs-6 btn btn-success mb-3 p-2" />
+            </form>
+</div>
+
+    

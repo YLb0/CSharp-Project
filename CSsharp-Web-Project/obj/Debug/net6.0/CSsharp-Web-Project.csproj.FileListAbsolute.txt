@@ -78,3 +78,9 @@ C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\obj\Debug\net6.
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\appsettings.Production.json
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystem.Data.Models.dll
 C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystem.Data.Models.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ProductSystem.Services.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\Shop.System.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystems.Web.ViewModels.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ProductSystem.Services.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\Shop.System.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\CSsharp-Web-Project\bin\Debug\net6.0\ShopSystems.Web.ViewModels.pdb

@@ -1,0 +1,15 @@
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\bin\Debug\net6.0\Shop.System.Data.deps.json
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\bin\Debug\net6.0\Shop.System.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\bin\Debug\net6.0\Shop.System.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\bin\Debug\net6.0\ShopSystem.Data.Models.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\bin\Debug\net6.0\ShopSystem.Data.Models.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.csproj.AssemblyReference.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.AssemblyInfoInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.AssemblyInfo.cs
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.csproj.CoreCompileInputs.cache
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.csproj.CopyComplete
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\refint\Shop.System.Data.dll
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\Shop.System.Data.pdb
+C:\Users\Beli\Desktop\Project\CSharp-Project\Shop.System.Data\obj\Debug\net6.0\ref\Shop.System.Data.dll

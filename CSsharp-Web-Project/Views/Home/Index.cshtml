@@ -1,8 +1,138 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<AllProductsViewModel>
+
+@*<h2 class="text-center">Welcome to Our Online Store</h2>*@
+
+<hr />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="product">
+                <div class="product-image">
+                    <img src="@item.ImageUrl" alt="@item.Name" />
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">@item.Name</h3>
+                    <p class="product-description">@item.Description</p>
+                    <div class="product-price">@item.Price.ToString("C")</div>
+                    <form class="input-group-sm" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.Id">
+                        <input type="submit" value="Add to Cart" class="fs-6 btn btn-success mb-3 p-2" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@*@using ShopSystems.Web.ViewModels.Product;
+@model AllProductsQueryModel
+
+@{
+    ViewBag.Title = "All Houses";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<form method="get">
+    <div class="row">
+        <div class="form-group col-md-3 d-flex justify-content-between">
+            <div class="form-group">
+                <label asp-for="Category"></label>
+                <select asp-for="Category" class="form-control">
+                    <option value="">All</option>
+                    @foreach (var category in Model.Categories)
+                    {
+                            <option value="@category">@category</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductsPerPage"></label>
+                <select asp-for="ProductsPerPage" class="form-control">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            <label asp-for="SearchString"></label>
+            <input asp-for="SearchString" class="form-control" placeholder="...">
+        </div>
+
+        <div class="form-group col-md-3">
+            <div class="form-group">
+                <label asp-for="ProductSorting"></label>
+                <select asp-for="ProductSorting" class="form-control">
+                    <option value="0">Newest</option>
+                    <option value="1">Oldest</option>
+                    <option value="2">Price (Ascending)</option>
+                    <option value="3">Price (Descending)</option>
+                    <option value="4">Not rented first</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group mt-4 p-2">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@{
+    int previousPage = Model.CurrentPage - 1;
+    if (previousPage < 1)
+    {
+        previousPage = 1;
+    }
+
+    int maxPage = (int)Math.Ceiling((double)Model.TotalProducts /
+        Model.ProductsPerPage);
+}
+
+<div class="row mb-5">
+    <div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+           asp-controller="House"
+           asp-action="All"
+           asp-route-currentPage="@previousPage"
+           asp-route-category="@Model.Category"
+           asp-route-searchTerm="@Model.SearchString"
+           asp-route-sorting="@((int)Model.ProductSorting)"><<</a>
+    </div>
+
+    @{
+        bool shouldNextPageBeDisabled = Model.CurrentPage == maxPage ||
+        !Model.Products.Any();
+    }
+
+    <div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-end">
+        <a class="btn btn-primary
+           @(shouldNextPageBeDisabled ? "disabled" : string.Empty)"
+           asp-controller="House"
+           asp-action="All"
+           asp-route-currentPage="@(Model.CurrentPage + 1)"
+           asp-route-category="@Model.Category"
+           asp-route-searchTerm="@Model.SearchString"
+           asp-route-sorting="@((int)Model.ProductSorting)">>></a>
+    </div>
 </div>
+
+@if (!Model.Products.Any())
+{
+        <h2 class="text-center">No houses found by the given criteria!</h2>
+}
+
+<div class="row">
+    @foreach (var house in Model.Products)
+    {
+            <partial name="_ProductPartial" model="@house" />
+    }
+</div>*@

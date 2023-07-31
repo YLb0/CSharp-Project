@@ -19,7 +19,6 @@ namespace ShopSystem.Data.Models
         public decimal Price { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string ImageUrl { get; set; } = null!;
 
         public DateTime CreatedOn { get; set; }

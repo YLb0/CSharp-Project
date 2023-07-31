@@ -952,6 +952,35 @@
           }
         }
       },
+      "ProductSystem.Services.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Shop.System.Data": "1.0.0",
+          "ShopSystem.Data.Models": "1.0.0",
+          "ShopSystems.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductSystem.Services.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductSystem.Services.Data.dll": {}
+        }
+      },
+      "Shop.System.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11",
+          "ShopSystem.Data.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shop.System.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shop.System.Data.dll": {}
+        }
+      },
       "ShopSystem.Data.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -963,6 +992,16 @@
         },
         "runtime": {
           "bin/placeholder/ShopSystem.Data.Models.dll": {}
+        }
+      },
+      "ShopSystems.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ShopSystems.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopSystems.Web.ViewModels.dll": {}
         }
       }
     }
@@ -2456,10 +2495,25 @@
         "version.txt"
       ]
     },
+    "ProductSystem.Services.Data/1.0.0": {
+      "type": "project",
+      "path": "../ProductSystem.Services.Data/ProductSystem.Services.Data.csproj",
+      "msbuildProject": "../ProductSystem.Services.Data/ProductSystem.Services.Data.csproj"
+    },
+    "Shop.System.Data/1.0.0": {
+      "type": "project",
+      "path": "../Shop.System.Data/Shop.System.Data.csproj",
+      "msbuildProject": "../Shop.System.Data/Shop.System.Data.csproj"
+    },
     "ShopSystem.Data.Models/1.0.0": {
       "type": "project",
       "path": "../ShopSystem.Data.Models/ShopSystem.Data.Models.csproj",
       "msbuildProject": "../ShopSystem.Data.Models/ShopSystem.Data.Models.csproj"
+    },
+    "ShopSystems.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ShopSystems.Web.ViewModels/ShopSystems.Web.ViewModels.csproj",
+      "msbuildProject": "../ShopSystems.Web.ViewModels/ShopSystems.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2469,7 +2523,10 @@
       "Microsoft.AspNetCore.Identity.UI >= 6.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
-      "ShopSystem.Data.Models >= 1.0.0"
+      "ProductSystem.Services.Data >= 1.0.0",
+      "Shop.System.Data >= 1.0.0",
+      "ShopSystem.Data.Models >= 1.0.0",
+      "ShopSystems.Web.ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2500,8 +2557,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj"
+            },
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj"
+            },
             "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj": {
               "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj"
+            },
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj"
             }
           }
         }

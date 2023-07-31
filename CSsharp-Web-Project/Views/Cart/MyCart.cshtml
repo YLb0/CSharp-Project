@@ -1,0 +1,112 @@
+﻿@model IEnumerable<AllProductsToCart>
+
+<div class="cart-layout">
+    <div class="cart-layout-header">
+        <h2 class="text-center">My Cart</h2>
+
+        <button onclick="scrollToBottom()" class="go-down-button">Go Down</button>
+        <script>
+            function scrollToBottom() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        <hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div class="cart-product">
+                        <div class="cart-product-image">
+                            <img src="@item.ImageUrl" alt="@item.Name" />
+                        </div>
+                        <div class="cart-product-details">
+                            <h4>@item.Name</h4>
+                            <p>@item.Description</p>
+                                            <form class="mt-2" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-id="@item.Id">
+                    <div class="d-grid gap-2">
+                        <span style="float:left">
+                            <input type="submit" value="Remove" class="btn btn-danger mb-2"
+                                   onclick="return confirm('Are you sure you want to delete post: @item.Name')" />
+                        </span>
+                    </div>
+                </form>
+                        </div>
+                    </div>
+                </td>
+                <td>@item.Category</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>@item.TotalPrice.ToString("C")</td>
+                  <td>
+            <form class="input-group-sm" asp-controller="Bill" asp-action="AddToBills" asp-route-id="@item.Id">
+                <input type="submit" value="Buy" class="fs-6 btn btn-success mb-3 p-2" />
+            </form>
+                </td>
+            </tr>
+
+        }
+@*        <tr>
+            <td colspan="4" class="text-right"><strong>Total :</strong></td>
+            <td><strong>@Model.Sum(x => x.TotalPrice).ToString("C")</strong></td>
+        </tr>*@
+
+    </tbody>
+
+</table>
+<p>
+    <div style="text-align: right;" class="form-check">
+                        <form class="input-group-sm" asp-controller="Bill" asp-action="MyBill">
+                        <input type="submit" value="CheckOut" class="fs-6 btn btn-danger mb-3 p-2" />
+                    </form> 
+    </div>
+</p>
+
+@*<h1>MyCart</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div class="cart-product">
+                        <div class="cart-product-image">
+                            <img src="@item.ImageUrl" alt="@item.Name" />
+                        </div>
+                        <div class="cart-product-details">
+                            <h4>@item.Name</h4>
+                            <p>@item.Description</p>
+                        </div>
+                    </div>
+                </td>
+                <td>@item.Category</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>@((item.Quantity * item.Price).ToString("C"))</td>
+            </tr>
+        }
+    </tbody>
+</table>*@

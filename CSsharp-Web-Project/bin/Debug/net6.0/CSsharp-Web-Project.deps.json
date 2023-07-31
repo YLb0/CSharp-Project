@@ -13,7 +13,10 @@
           "Microsoft.AspNetCore.Identity.UI": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.15",
-          "ShopSystem.Data.Models": "1.0.0"
+          "ProductSystem.Services.Data": "1.0.0",
+          "Shop.System.Data": "1.0.0",
+          "ShopSystem.Data.Models": "1.0.0",
+          "ShopSystems.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "CSsharp-Web-Project.dll": {}
@@ -544,12 +547,36 @@
           }
         }
       },
+      "ProductSystem.Services.Data/1.0.0": {
+        "dependencies": {
+          "Shop.System.Data": "1.0.0",
+          "ShopSystem.Data.Models": "1.0.0",
+          "ShopSystems.Web.ViewModels": "1.0.0"
+        },
+        "runtime": {
+          "ProductSystem.Services.Data.dll": {}
+        }
+      },
+      "Shop.System.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
+          "ShopSystem.Data.Models": "1.0.0"
+        },
+        "runtime": {
+          "Shop.System.Data.dll": {}
+        }
+      },
       "ShopSystem.Data.Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15"
         },
         "runtime": {
           "ShopSystem.Data.Models.dll": {}
+        }
+      },
+      "ShopSystems.Web.ViewModels/1.0.0": {
+        "runtime": {
+          "ShopSystems.Web.ViewModels.dll": {}
         }
       }
     }
@@ -924,7 +951,22 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "ProductSystem.Services.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shop.System.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ShopSystem.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopSystems.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
