@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProductSystem.Services.Data.Interfaces;
-using System.Diagnostics;
 
 namespace CSsharp_Web_Project.Controllers
 {
