@@ -12,8 +12,8 @@ using Shop.System.Data;
 namespace Shop.System.Data.Migrations
 {
     [DbContext(typeof(Sh0pDBContext))]
-    [Migration("20230731150644_init")]
-    partial class init
+    [Migration("20230731181407_plokj")]
+    partial class plokj
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

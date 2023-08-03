@@ -3,6 +3,8 @@ using ProductSystem.Services.Data.Interfaces;
 using ProductSystem.Services.Data;
 using Shop.System.Data;
 using ShopSystem.Data.Models;
+using Microsoft.AspNetCore.Identity;
+using OnlineSh0p.Web.Infrastructure.Extensions;
 
 namespace CSsharp_Web_Project
 {
@@ -31,7 +33,9 @@ namespace CSsharp_Web_Project
                 options.Password.RequiredLength =
                                 builder.Configuration.GetValue<int>("Identity:Password:RequiredLength");
             })
+                .AddRoles<IdentityRole<Guid>>()
                 .AddEntityFrameworkStores<Sh0pDBContext>();
+            
             builder.Services.AddControllersWithViews();
 
 
@@ -63,6 +67,8 @@ namespace CSsharp_Web_Project
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.SeedAdministrator("admin@Online-Sh0p.bg");
 
             app.MapControllerRoute(
                 name: "default",

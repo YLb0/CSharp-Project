@@ -4,12 +4,6 @@ using Shop.System.Data;
 using ShopSystem.Data.Models;
 using ShopSystems.Web.ViewModels.Cart;
 using ShopSystems.Web.ViewModels.Client;
-using ShopSystems.Web.ViewModels.Product;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProductSystem.Services.Data
 {
@@ -38,23 +32,23 @@ namespace ProductSystem.Services.Data
             await dbContext.SaveChangesAsync();
         }
 
-        public async Task AddOrder(AllProductsToCart bill, ClientViewModel client)
-        {
-            bool alreadyAdded = await dbContext.BillsClients
-                        .AnyAsync(ub => ub.BillId.ToString() == bill.Id && ub.ClientId.ToString() == client.Id);
+        //public async Task AddOrder(AllProductsToCart bill, ClientViewModel client)
+        //{
+        //    bool alreadyAdded = await dbContext.BillsClients
+        //                .AnyAsync(ub => ub.BillId.ToString() == bill.Id && ub.ClientId.ToString() == client.Id);
 
-            if (alreadyAdded == false)
-            {
-                var clientBills = new BillsClients
-                {
-                    BillId = Guid.Parse(bill.Id),
-                    ClientId = Guid.Parse(client.Id)
-                };
+        //    if (alreadyAdded == false)
+        //    {
+        //        var clientBills = new BillsClients
+        //        {
+        //            BillId = Guid.Parse(bill.Id),
+        //            ClientId = Guid.Parse(client.Id)
+        //        };
 
-                await dbContext.BillsClients.AddAsync(clientBills);
-                await dbContext.SaveChangesAsync();
-            }
-        }
+        //        await dbContext.BillsClients.AddAsync(clientBills);
+        //        await dbContext.SaveChangesAsync();
+        //    }
+        //}
 
         public async Task<AllProductsToCart?> GetBillByIdAsync(string id)
         {

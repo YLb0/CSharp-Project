@@ -25,30 +25,30 @@ namespace Shop.System.Data
     public DbSet<BillsClients> BillsClients { get; set; }
 
 
-    protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
     {
 
-        builder.Entity<BillsClients>()
-            .HasKey(k => new
-            {
-                k.ClientId,
-                k.BillId
-            });
+            builder.Entity<BillsClients>()
+                .HasKey(k => new
+                {
+                    k.ClientId,
+                    k.BillId
+                });
 
-        //builder.Entity<Bill>()
-        //    .HasOne(h => h.Cart)
-        //    .WithMany(b => b.Bills)
-        //    .HasForeignKey(b => b.CartId)
-        //    .OnDelete(DeleteBehavior.ClientCascade);
+            //builder.Entity<Client>()
+            //    .HasOne(h => h.Bill)
+            //    .WithMany(b => b.Clients)
+            //    .HasForeignKey(b => b.BillId)
+            //    .OnDelete(DeleteBehavior.ClientCascade);
 
-        //builder.Entity<Bill>()
-        //    .HasOne(h => h.User)
-        //    .WithMany(a => a.Bills)
-        //    .HasForeignKey(h => h.UserId)
-        //    .OnDelete(DeleteBehavior.ClientCascade);
+            //builder.Entity<Bill>()
+            //    .HasOne(h => h.User)
+            //    .WithMany(a => a.Bills)
+            //    .HasForeignKey(h => h.UserId)
+            //    .OnDelete(DeleteBehavior.ClientCascade);
 
 
-        builder.Entity<Product>()
+            builder.Entity<Product>()
             .Property(p => p.CreatedOn)
             .HasDefaultValueSql("GETDATE()");
 

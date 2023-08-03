@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSystem.Data.Models", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4BB95561-0F15-44F1-9C71-7EA275AB6701}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductSystem.Services.Data", "ProductSystem.Services.Data\ProductSystem.Services.Data.csproj", "{1556AE03-10A4-4E69-BF66-123AFBE933E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSystem.Services.Data", "ProductSystem.Services.Data\ProductSystem.Services.Data.csproj", "{1556AE03-10A4-4E69-BF66-123AFBE933E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopSystems.Web.ViewModels", "ShopSystems.Web.ViewModels\ShopSystems.Web.ViewModels.csproj", "{DADD399D-2BD3-426F-A091-1CA76BEB1C30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSystems.Web.ViewModels", "ShopSystems.Web.ViewModels\ShopSystems.Web.ViewModels.csproj", "{DADD399D-2BD3-426F-A091-1CA76BEB1C30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.System.Data", "Shop.System.Data\Shop.System.Data.csproj", "{4A632324-311E-4CA9-BE3B-3399906FFE6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.System.Data", "Shop.System.Data\Shop.System.Data.csproj", "{4A632324-311E-4CA9-BE3B-3399906FFE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSh0p.Web.Infrastructure", "OnlineSh0p.Web.Infrastructure\OnlineSh0p.Web.Infrastructure.csproj", "{D553AC32-5599-411C-B72E-F07B434B2E87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4A632324-311E-4CA9-BE3B-3399906FFE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A632324-311E-4CA9-BE3B-3399906FFE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A632324-311E-4CA9-BE3B-3399906FFE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D553AC32-5599-411C-B72E-F07B434B2E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D553AC32-5599-411C-B72E-F07B434B2E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D553AC32-5599-411C-B72E-F07B434B2E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D553AC32-5599-411C-B72E-F07B434B2E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

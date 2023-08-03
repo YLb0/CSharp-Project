@@ -16,7 +16,7 @@ namespace ProductSystem.Services.Data.Interfaces
 
         Task<ClientViewModel?> GetClientByIdAsync(string id);
 
-        Task AddOrder(AllProductsToCart billId, ClientViewModel clientId);
+       // Task AddOrder(AllProductsToCart billId, ClientViewModel clientId);
 
         Task<IEnumerable<AllOrdersViewModel>> GetMyOrdersAsync();
     }

@@ -42,15 +42,15 @@ namespace CSsharp_Web_Project.Controllers
             return RedirectToAction("All", "Product");
         }
 
-        public async Task<IActionResult> AddOrder(string billId, string clientId)
-        {
-            var bill = await clientService.GetBillByIdAsync(billId);
+        //public async Task<IActionResult> AddOrder(string billId, string clientId)
+        //{
+        //    var bill = await clientService.GetBillByIdAsync(billId);
 
-            var client = await clientService.GetClientByIdAsync(clientId);
+        //    var client = await clientService.GetClientByIdAsync(clientId);
 
-            await clientService.AddOrder(bill, client);
+        //    await clientService.AddOrder(bill, client);
 
-            return RedirectToAction("All", "Product");
-        }
+        //    return RedirectToAction("All", "Product");
+        //}
     }
 }

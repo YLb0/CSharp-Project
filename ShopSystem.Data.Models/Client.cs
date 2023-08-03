@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ShopSystem.Data.Models
 {
@@ -41,6 +36,11 @@ namespace ShopSystem.Data.Models
         public string PhoneNumber { get; set; }
 
         public DateTime OrderDate { get; set; }
+
+        //public Guid BillId { get; set; }
+
+        //[ForeignKey(nameof(BillId))]
+        //public Bill Bill { get; set; }
 
         public List<BillsClients> BillsClients { get; set; } = new List<BillsClients>();
     }

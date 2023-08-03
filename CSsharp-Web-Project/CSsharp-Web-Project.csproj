@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnlineSh0p.Web.Infrastructure\OnlineSh0p.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\ProductSystem.Services.Data\ProductSystem.Services.Data.csproj" />
     <ProjectReference Include="..\Shop.System.Data\Shop.System.Data.csproj" />
     <ProjectReference Include="..\ShopSystem.Data.Models\ShopSystem.Data.Models.csproj" />
