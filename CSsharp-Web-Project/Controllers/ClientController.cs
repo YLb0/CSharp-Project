@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ProductSystem.Services.Data;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using OnlineSh0p.Web.Infrastructure.Extensions;
 using ProductSystem.Services.Data.Interfaces;
 using ShopSystems.Web.ViewModels.Client;
 
 namespace CSsharp_Web_Project.Controllers
 {
+    [Authorize]
     public class ClientController : Controller
     {
         private readonly IClientService clientService;
@@ -16,6 +18,10 @@ namespace CSsharp_Web_Project.Controllers
 
         public async Task<IActionResult> All()
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var model = await clientService.GetMyOrdersAsync();
 
             return View(model);

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnlineSh0p.Web.Infrastructure.Extensions;
 using ProductSystem.Services.Data.Interfaces;
 using ShopSystems.Web.ViewModels.Product;
 
@@ -18,6 +19,10 @@ namespace CSsharp_Web_Project.Controllers
 
         public async Task<IActionResult> All()
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var model = await productService.GetAllProductsAsync();
 
             return View(model);
@@ -26,6 +31,10 @@ namespace CSsharp_Web_Project.Controllers
         [HttpGet]
         public async Task<IActionResult> Add()
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
             var model = await productService.GetNewAddProductModelAsync();
 
             return View(model);
@@ -38,15 +47,24 @@ namespace CSsharp_Web_Project.Controllers
             {
                 return View(model);
             }
-
+            
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
             await productService.AddProductAsync(model);
 
             return RedirectToAction(nameof(All));
+
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
             try
             {
                 var product = await this.productService
@@ -70,6 +88,12 @@ namespace CSsharp_Web_Project.Controllers
                 //model.Categories = await this.categoryService.GetAllCategoryAsync();
                 return View(model);
             }
+
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             try
             {
 
@@ -106,6 +130,11 @@ namespace CSsharp_Web_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(string id, ProductPreDeleteViewModel model)
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             try
             {
                 await productService.DeleteProductAsync(id);

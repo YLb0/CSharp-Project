@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductSystem.Services.Data.Interfaces;
 using System.Security.Claims;
 
 namespace CSsharp_Web_Project.Controllers
 {
+    [Authorize]
     public class BillController : Controller
     {
         private readonly IBillService billService;

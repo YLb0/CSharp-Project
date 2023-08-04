@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<AllProductsViewModel>
+@using OnlineSh0p.Web.Infrastructure.Extensions;
 
 @*<h2 class="text-center">Welcome to Our Online Store</h2>*@
 
@@ -16,9 +17,9 @@
                     <h3 class="product-name">@item.Name</h3>
                     <p class="product-description">@item.Description</p>
                     <div class="product-price">@item.Price.ToString("C")</div>
-                    <form class="input-group-sm" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.Id">
-                        <input type="submit" value="Add to Cart" class="fs-6 btn btn-success mb-3 p-2" />
-                    </form>
+                        <form class="input-group-sm" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.Id">
+                            <input type="submit" value="Add to Cart" class="fs-6 btn btn-success mb-3 p-2" />
+                        </form>
                 </div>
             </div>
         </div>

@@ -6,12 +6,10 @@ namespace CSsharp_Web_Project.Controllers
     public class HomeController : Controller
     {
         private readonly IProductService productService;
-        private readonly ICategoryService categoryService;
 
-        public HomeController(IProductService productService, ICategoryService categoryService)
+        public HomeController(IProductService productService)
         {
             this.productService = productService;
-            this.categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()

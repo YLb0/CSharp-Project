@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnlineSh0p.Web.Infrastructure.Extensions;
 using ProductSystem.Services.Data.Interfaces;
 using ShopSystems.Web.ViewModels.Category;
 using ShopSystems.Web.ViewModels.Product;
@@ -16,6 +17,10 @@ namespace CSsharp_Web_Project.Controllers
 
         public async Task<IActionResult> All()
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var model = await categoryService.GetAllCategoryAsync();
 
             return View(model);
@@ -24,6 +29,10 @@ namespace CSsharp_Web_Project.Controllers
         [HttpGet]
         public IActionResult Add()
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
             AddCategoryViewModel model = new AddCategoryViewModel();
 
             return View(model);
@@ -37,6 +46,11 @@ namespace CSsharp_Web_Project.Controllers
                 return View(model);
             }
 
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             await categoryService.AddCategoryAsync(model);
 
             return RedirectToAction(nameof(All));
@@ -45,6 +59,11 @@ namespace CSsharp_Web_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(string id, ProductPreDeleteViewModel model)
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             try
             {
                 await categoryService.DeleteCategoryAsync(id);
@@ -61,6 +80,11 @@ namespace CSsharp_Web_Project.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             AddCategoryViewModel? category = await categoryService.GetCategoryByIDForEditAsync(id);
 
             if (category == null)
@@ -73,6 +97,11 @@ namespace CSsharp_Web_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, AddCategoryViewModel model)
         {
+            if (!this.User.IsAdmin())
+            {
+                return RedirectToAction(nameof(All));
+            }
+
             if (!ModelState.IsValid)
             {
                 return View(model);
