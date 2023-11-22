@@ -45,7 +45,7 @@ namespace CSsharp_Web_Project.Controllers
 
             await clientService.AddClient(model);
 
-            return RedirectToAction("All", "Product");
+            return RedirectToAction("Index", "Home");
         }
 
         //public async Task<IActionResult> AddOrder(string billId, string clientId)

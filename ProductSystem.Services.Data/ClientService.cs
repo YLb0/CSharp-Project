@@ -27,6 +27,7 @@ namespace ProductSystem.Services.Data
                 PhoneNumber = model.PhoneNumber,
                 OrderDate = model.OrderDate,
                 Country = model.Country
+
             };
             await dbContext.Clients.AddAsync(client);
             await dbContext.SaveChangesAsync();
@@ -87,16 +88,31 @@ namespace ProductSystem.Services.Data
         {
             return await dbContext.Clients
                 .Select(p => new AllOrdersViewModel
-                    {
+                {
                     Id = p.Id.ToString(),
-                    FirstName=p.FirstName,
-                    LastName=p.LastName,
+                    FirstName = p.FirstName,
+                    LastName = p.LastName,
                     Address = p.Address,
                     City = p.City,
                     Country = p.Country,
                     OrderDate = p.OrderDate,
                     PhoneNumber = p.PhoneNumber
-                    }).ToArrayAsync();
+                }).ToArrayAsync();
+
+            //return await dbContext.BillsClients
+            //    .Select(p => new AllOrdersViewModel
+            //    {
+            //        Id = p.Client.Id.ToString(),
+            //        FirstName = p.Client.FirstName,
+            //        LastName = p.Client.LastName,
+            //        Address = p.Client.Address,
+            //        City = p.Client.City,
+            //        Country = p.Client.Country,
+            //        OrderDate = p.Client.OrderDate,
+            //        PhoneNumber = p.Client.PhoneNumber,
+            //        ProductName = p.Bill.Cart.Product.Name,
+            //        ProductCategory = p.Bill.Cart.Product.Category.Name
+            //    }).ToArrayAsync();
         }
     }
 }
