@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj",
+      "projectUniqueName": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj",
       "projectName": "ShopSystems.Web.ViewModels",
-      "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj",
+      "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Beli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\obj\\",
+      "outputPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystems.Web.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Beli\\AppData\\Roaming\\NuGet\\NuGet.Config",

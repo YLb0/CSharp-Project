@@ -13,3 +13,18 @@ C:\Users\Beli\Desktop\Project\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\D
 C:\Users\Beli\Desktop\Project\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\refint\OnlineSh0p.Web.Infrastructure.dll
 C:\Users\Beli\Desktop\Project\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.pdb
 C:\Users\Beli\Desktop\Project\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\ref\OnlineSh0p.Web.Infrastructure.dll
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\bin\Debug\net6.0\OnlineSh0p.Web.Infrastructure.deps.json
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\bin\Debug\net6.0\OnlineSh0p.Web.Infrastructure.dll
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\bin\Debug\net6.0\OnlineSh0p.Web.Infrastructure.pdb
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\bin\Debug\net6.0\ShopSystem.Data.Models.dll
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\bin\Debug\net6.0\ShopSystem.Data.Models.pdb
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.csproj.CopyComplete
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.dll
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\refint\OnlineSh0p.Web.Infrastructure.dll
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\OnlineSh0p.Web.Infrastructure.pdb
+C:\Users\Beli\Documents\C# - Web\CSharp-Project\OnlineSh0p.Web.Infrastructure\obj\Debug\net6.0\ref\OnlineSh0p.Web.Infrastructure.dll
