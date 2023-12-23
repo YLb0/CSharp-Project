@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rp93CwdYiduRRQ5CtwZtDRFcNt9VJTeLFiVukx4Ceew8KbzKkxng6J5QxQY6CI0i3E4YiHhACheRg5bL8mWsZw==",
+  "dgSpecHash": "VXK2+LYaUOv48iH3GfIXj8C3TAdWbKTVtIrXvtTqfCD6raMpP9/4Uf3PQVQIgCGsFZnR7HDqB/IQJiHFCj+Pig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj",
+  "projectFilePath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beli\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.11\\microsoft.aspnetcore.cryptography.internal.6.0.11.nupkg.sha512",
     "C:\\Users\\Beli\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.11\\microsoft.aspnetcore.cryptography.keyderivation.6.0.11.nupkg.sha512",

@@ -68,7 +68,7 @@ namespace CSsharp_Web_Project
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.SeedAdministrator("admin@Online-Sh0p.bg");
+            app.SeedAdministrator("admin@beli-001.com");
 
             app.MapControllerRoute(
                 name: "default",

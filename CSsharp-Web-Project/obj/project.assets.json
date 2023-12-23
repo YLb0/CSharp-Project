@@ -11889,11 +11889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
+      "projectUniqueName": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
       "projectName": "CSsharp-Web-Project",
-      "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
+      "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\CSsharp-Web-Project.csproj",
       "packagesPath": "C:\\Users\\Beli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\CSsharp-Web-Project\\obj\\",
+      "outputPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\CSsharp-Web-Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Beli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11911,20 +11911,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj"
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj"
             },
-            "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj": {
-              "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj"
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ProductSystem.Services.Data\\ProductSystem.Services.Data.csproj"
             },
-            "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj": {
-              "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj"
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\Shop.System.Data\\Shop.System.Data.csproj"
             },
-            "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj"
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystem.Data.Models\\ShopSystem.Data.Models.csproj"
             },
-            "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj"
+            "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\ShopSystems.Web.ViewModels\\ShopSystems.Web.ViewModels.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6mJGartqrBF7VwSvCQ4AYiE3+mjm8reoQ+jN34z3J59SVNXuOZgm2JG8h+LwkZdn310Bp6q43QsPp/C5oraemg==",
+  "dgSpecHash": "vfvh5e6tUbjFh2S6uZUWnhiqPPYrLJ9VdXlxFETlEJNSLXJ1qhx35/8eiDExBn8plL+zBbC82XFAHADpDEhJOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Beli\\Documents\\C# - Web\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Beli\\Desktop\\Project\\CSharp-Project\\OnlineSh0p.Web.Infrastructure\\OnlineSh0p.Web.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beli\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Beli\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
